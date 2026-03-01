@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-sygo-yellow: #facc15; /* More vibrant yellow */
+  --color-sygo-yellow-light: #fefce8;
+  --color-sygo-red: #f43f5e; /* Softer, more modern rose-red */
+  --color-sygo-red-dark: #0f172a;
+  --color-sygo-accent: #6366f1; /* Indigo accent for modern contrast */
+}
+
+@utility glass-effect {
+  @apply bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border border-white/20 dark:border-white/10;
+}
+
+@utility glass-card {
+  @apply glass-effect shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-1;
+}
+
+@utility clip-path-ribbon-left {
+  clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+
+@utility clip-path-ribbon-right {
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    @apply transition-colors duration-500;
+  }
+  
+  body {
+    @apply bg-sygo-yellow-light text-sygo-red-dark antialiased transition-colors duration-500 selection:bg-sygo-red/30;
+  }
+
+  .dark body {
+    @apply bg-slate-950 text-slate-100;
+  }
+
+  * {
+    transition-property: background-color, border-color, color, fill, stroke, transform, box-shadow, opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 400ms;
+  }
+}
+
+@layer components {
+  .animate-stagger {
+    @apply opacity-0 translate-y-8;
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
