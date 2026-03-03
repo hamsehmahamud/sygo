@@ -4,6 +4,24 @@ import ProjectCard, { ProjectCardProps } from './ProjectCard';
 
 const allProjects: ProjectCardProps[] = [
   {
+    category: 'Grants Application',
+    title: 'Institutional Capacity Strengthening',
+    description: 'Grant Type 2 Short Proposal Application. Flexible grants allowing WLOs to propose innovative activities, including technology-based solutions, to respond to GBV or mitigate risks.',
+    target: 20000,
+    reached: 10,
+    backers: 15,
+    imageUrl: '/input_file_21.png',
+  },
+  {
+    category: 'Grants Application',
+    title: 'Project Implementation',
+    description: 'Grant Type 2. Flexible grants allowing WLOs to propose innovative activities, including technology-based solutions and new ideas that could assist in responding to GBV or mitigating GBV risks.',
+    target: 40000,
+    reached: 5,
+    backers: 8,
+    imageUrl: '/input_file_22.png',
+  },
+  {
     category: 'Humanitarian',
     title: 'GBV Prevention & Response',
     description: 'Providing essential support and material for survivor-centered, gender-responsive service provision at One Stop Centers.',
