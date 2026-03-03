@@ -14,7 +14,7 @@ const Sponsors: React.FC = () => {
   const scrollPartners = [...partners, ...partners, ...partners];
 
   return (
-    <section id="sponsors" className="py-24 bg-slate-50 dark:bg-slate-950 transition-colors duration-500 relative overflow-hidden">
+    <section id="sponsors" className="py-24 bg-white dark:bg-black transition-colors duration-500 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="flex flex-col lg:flex-row items-center justify-between mb-20 gap-12">
@@ -52,7 +52,7 @@ const Sponsors: React.FC = () => {
         </div>
 
         {/* Horizontal Scrolling Marquee */}
-        <div className="relative w-full overflow-hidden py-10 before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-20 before:bg-gradient-to-r before:from-slate-50 before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-20 after:bg-gradient-to-l after:from-slate-50 after:to-transparent">
+        <div className="relative w-full overflow-hidden py-10 before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-20 before:bg-gradient-to-r before:from-white before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-20 after:bg-gradient-to-l after:from-white after:to-transparent">
           <motion.div
             className="flex gap-8 items-center"
             animate={{
@@ -71,7 +71,7 @@ const Sponsors: React.FC = () => {
             {scrollPartners.map((partner, index) => (
               <motion.div
                 key={index}
-                className="flex flex-col justify-center items-center p-8 glass-card bg-white dark:bg-slate-900 border-none transition-all duration-500 group w-[300px] shrink-0"
+                className="flex flex-col justify-center items-center p-8 glass-card bg-white dark:bg-[#0a0a0a] border-none transition-all duration-500 group w-[300px] shrink-0"
               >
                 <img
                   src={partner.logo}
@@ -90,7 +90,7 @@ const Sponsors: React.FC = () => {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-16 sm:mt-24 p-8 sm:p-12 md:p-20 bg-sygo-red-dark dark:bg-slate-900 rounded-[3rem] sm:rounded-[4rem] text-white flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-12 shadow-3xl relative overflow-hidden border border-white/5"
+          className="mt-16 sm:mt-24 p-8 sm:p-12 md:p-20 bg-sygo-red-dark dark:bg-[#0a0a0a] rounded-[3rem] sm:rounded-[4rem] text-white flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-12 shadow-3xl relative overflow-hidden border border-white/5"
         >
           <div className="absolute top-0 right-0 w-1/2 h-full bg-sygo-accent/10 dark:bg-white/5 skew-x-12 translate-x-1/4"></div>
 

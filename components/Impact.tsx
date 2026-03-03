@@ -10,7 +10,7 @@ const impactData = [
 
 const Impact: React.FC = () => {
   return (
-    <section id="impact" className="py-32 bg-sygo-yellow dark:bg-slate-800 transition-colors duration-300 relative overflow-hidden">
+    <section id="impact" className="py-32 bg-sygo-yellow dark:bg-black transition-colors duration-300 relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute inset-0 z-0 opacity-10 grayscale mix-blend-multiply dark:mix-blend-overlay">
         <img src="/input_file_9.png" className="w-full h-full object-cover" alt="Impact Background" />

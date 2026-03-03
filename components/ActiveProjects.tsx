@@ -28,7 +28,7 @@ const allProjects: ProjectCardProps[] = [
     target: 50000,
     reached: 65,
     backers: 420,
-    imageUrl: '/images/sygo/project-3.jpg',
+    imageUrl: '/images/sygo/project-4.jpg',
   },
   {
     category: 'Advocacy',
@@ -46,7 +46,7 @@ const allProjects: ProjectCardProps[] = [
     target: 15000,
     reached: 45,
     backers: 98,
-    imageUrl: '/images/sygo/project-2.jpg'
+    imageUrl: '/images/sygo/project-5.jpg'
   },
   {
     category: 'Education',
@@ -70,7 +70,7 @@ const allProjects: ProjectCardProps[] = [
 
 const ActiveProjects: React.FC = () => {
   return (
-    <section id="causes" className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-50/50 dark:bg-slate-950 transition-colors duration-500">
+    <section id="causes" className="py-24 px-4 sm:px-6 lg:px-8 bg-white dark:bg-black transition-colors duration-500">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <motion.div

@@ -2,7 +2,7 @@ import React from 'react';
 
 const VideoSection: React.FC = () => {
   return (
-    <section className="py-24 bg-slate-50 dark:bg-slate-800 transition-colors duration-300">
+    <section className="py-24 bg-white dark:bg-black transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-sygo-red-dark dark:text-white mb-8 sm:mb-12 tracking-tight px-4">We Empower The Poorest</h2>
         <div className="relative max-w-5xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl group cursor-pointer">

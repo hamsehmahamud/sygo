@@ -18,7 +18,7 @@ const VisionMission: React.FC = () => {
   ];
 
   return (
-    <section id="vision" className="py-16 sm:py-24 bg-white dark:bg-slate-950 transition-colors duration-500 overflow-hidden">
+    <section id="vision" className="py-16 sm:py-24 bg-white dark:bg-black transition-colors duration-500 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Modern Header */}
@@ -64,7 +64,7 @@ const VisionMission: React.FC = () => {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-12 glass-card bg-sygo-red-dark dark:bg-slate-900 border-none p-8 sm:p-12 md:p-20 text-white relative flex flex-col gap-8 sm:gap-12 items-center"
+            className="lg:col-span-12 glass-card bg-sygo-red-dark dark:bg-[#0a0a0a] border-none p-8 sm:p-12 md:p-20 text-white relative flex flex-col gap-8 sm:gap-12 items-center"
           >
             <div className="w-full relative h-[220px] sm:h-[300px] md:h-[400px] rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden group">
               <img

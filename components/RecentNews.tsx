@@ -27,7 +27,7 @@ const newsItems = [
 
 const RecentNews: React.FC = () => {
   return (
-    <section id="news" className="py-24 bg-white dark:bg-slate-950 transition-colors duration-500 overflow-hidden">
+    <section id="news" className="py-24 bg-white dark:bg-black transition-colors duration-500 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-10">
           <div className="max-w-2xl">
@@ -68,7 +68,7 @@ const RecentNews: React.FC = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: index * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               viewport={{ once: true }}
-              className="group glass-card bg-white dark:bg-slate-900 border-none h-full flex flex-col"
+              className="group glass-card bg-slate-50 dark:bg-[#0a0a0a] border-none h-full flex flex-col"
             >
               <div className="relative h-64 overflow-hidden">
                 <img

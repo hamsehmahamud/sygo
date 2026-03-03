@@ -17,7 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imageUrl, category, de
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
-      className="group glass-card bg-white dark:bg-slate-900 border-none flex flex-col h-full"
+      className="group glass-card bg-white dark:bg-[#0a0a0a] border-none flex flex-col h-full"
     >
       <div className="relative aspect-[16/10] w-full overflow-hidden">
         <img

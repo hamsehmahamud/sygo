@@ -97,7 +97,7 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      <header className={`sticky top-0 z-50 transition-all duration-300 ${hasScrolled ? 'bg-sygo-yellow-light dark:bg-slate-900 shadow-xl' : 'bg-sygo-yellow-light/95 dark:bg-slate-900/95 backdrop-blur-sm'}`}>
+      <header className={`sticky top-0 z-50 transition-all duration-300 ${hasScrolled ? 'bg-white dark:bg-black shadow-xl' : 'bg-white/95 dark:bg-black/95 backdrop-blur-sm'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20 lg:h-24">
             {/* Logo Section */}
@@ -157,13 +157,13 @@ const Header: React.FC = () => {
                 animate={{ x: 0 }}
                 exit={{ x: '100%' }}
                 transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-                className="fixed inset-y-0 right-0 z-50 w-[85vw] max-w-sm bg-white dark:bg-slate-900 shadow-2xl lg:hidden flex flex-col border-l border-black/5 dark:border-white/5"
+                className="fixed inset-y-0 right-0 z-50 w-[85vw] max-w-sm bg-white dark:bg-[#0a0a0a] shadow-2xl lg:hidden flex flex-col border-l border-black/5 dark:border-white/5"
               >
                 <div className="flex items-center justify-between p-6 border-b border-black/5 dark:border-white/5">
                   <span className="text-sm font-black text-sygo-red/60 uppercase tracking-widest">Menu</span>
                   <button
                     onClick={() => setIsMenuOpen(false)}
-                    className="p-2 bg-sygo-yellow-light dark:bg-slate-800 text-sygo-red-dark dark:text-white rounded-xl shadow-sm border border-black/5 dark:border-white/10 hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+                    className="p-2 bg-slate-50 dark:bg-black text-sygo-red-dark dark:text-white rounded-xl shadow-sm border border-black/5 dark:border-white/10 hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
                   >
                     <span className="material-symbols-outlined text-xl sm:text-2xl">close</span>
                   </button>
@@ -179,7 +179,7 @@ const Header: React.FC = () => {
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: idx * 0.05 }}
-                        className="flex items-center justify-between group py-3 px-4 rounded-2xl hover:bg-sygo-yellow-light dark:hover:bg-slate-800 transition-colors"
+                        className="flex items-center justify-between group py-3 px-4 rounded-2xl hover:bg-slate-50 dark:hover:bg-black transition-colors"
                       >
                         <span className="text-xl sm:text-2xl font-black text-sygo-red-dark dark:text-white group-hover:text-sygo-red transition-colors">{item.name}</span>
                         <span className="material-symbols-outlined opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 text-sygo-red transition-all">arrow_forward</span>
@@ -198,7 +198,7 @@ const Header: React.FC = () => {
                         changeTheme(theme === 'dark' ? 'light' : 'dark');
                         setIsMenuOpen(false);
                       }}
-                      className="p-3 sm:p-4 rounded-2xl bg-white dark:bg-slate-800 shadow-xl border border-black/5 dark:border-white/10 text-sygo-red dark:text-sygo-yellow transition-all active:scale-90 flex items-center justify-center gap-2"
+                      className="p-3 sm:p-4 rounded-2xl bg-white dark:bg-black shadow-xl border border-black/5 dark:border-white/10 text-sygo-red dark:text-sygo-yellow transition-all active:scale-90 flex items-center justify-center gap-2"
                     >
                       <span className="material-symbols-outlined text-[24px] block">
                         {theme === 'dark' ? 'light_mode' : 'dark_mode'}
