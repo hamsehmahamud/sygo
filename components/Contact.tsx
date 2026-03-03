@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-5 bg-sygo-yellow-light dark:bg-slate-800 p-8 sm:p-10 md:p-14 rounded-[3rem] sm:rounded-[4rem] shadow-2xl border-2 border-sygo-red/5 dark:border-white/5 relative overflow-hidden group"
+            className="lg:col-span-5 bg-slate-50 dark:bg-slate-800 p-8 sm:p-10 md:p-14 rounded-[3rem] sm:rounded-[4rem] shadow-2xl border-2 border-sygo-red/5 dark:border-white/5 relative overflow-hidden group"
           >
             <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity duration-700">
               <img src="/input_file_2.png" className="w-full h-full object-cover" alt="Office Background" />

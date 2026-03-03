@@ -20,8 +20,8 @@ const Hero: React.FC = () => {
         </motion.div>
 
         {/* Modern Layered Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-sygo-yellow-light/95 via-sygo-yellow-light/70 to-transparent dark:from-slate-950 dark:via-slate-950/80 dark:to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-sygo-yellow-light dark:from-slate-950 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-white/95 via-white/70 to-transparent dark:from-slate-950 dark:via-slate-950/80 dark:to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-white dark:from-slate-950 to-transparent"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20">

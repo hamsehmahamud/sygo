@@ -3,7 +3,7 @@
 @theme {
   --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
   --color-sygo-yellow: #facc15; /* More vibrant yellow */
-  --color-sygo-yellow-light: #fefce8;
+  --color-sygo-yellow-light: #ffffff;
   --color-sygo-red: #f43f5e; /* Softer, more modern rose-red */
   --color-sygo-red-dark: #0f172a;
   --color-sygo-accent: #6366f1; /* Indigo accent for modern contrast */

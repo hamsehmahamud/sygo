@@ -32,7 +32,7 @@ const DonationSection: React.FC = () => {
   };
 
   return (
-    <section className="py-16 sm:py-24 bg-sygo-yellow-light relative overflow-hidden">
+    <section className="py-16 sm:py-24 bg-slate-50 relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sygo-red via-sygo-yellow to-sygo-red opacity-20"></div>
       <div className="absolute -bottom-24 -left-24 size-96 bg-sygo-yellow rounded-full blur-[100px] opacity-10"></div>
@@ -78,7 +78,7 @@ const DonationSection: React.FC = () => {
                     {amounts.map((amount) => (
                       <button
                         key={amount}
-                        className="group relative py-4 px-2 bg-sygo-yellow-light border-2 border-transparent rounded-2xl font-black text-sygo-red-dark hover:border-sygo-yellow hover:bg-white transition-all shadow-sm overflow-hidden"
+                        className="group relative py-4 px-2 bg-slate-50 border-2 border-transparent rounded-2xl font-black text-sygo-red-dark hover:border-sygo-yellow hover:bg-white transition-all shadow-sm overflow-hidden"
                       >
                         <span className="relative z-10">${amount}</span>
                         <div className="absolute inset-0 bg-sygo-yellow translate-y-full group-hover:translate-y-0 transition-transform duration-300 -z-0"></div>

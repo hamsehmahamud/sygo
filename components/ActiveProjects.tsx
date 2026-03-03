@@ -70,7 +70,7 @@ const allProjects: ProjectCardProps[] = [
 
 const ActiveProjects: React.FC = () => {
   return (
-    <section id="causes" className="py-24 px-4 sm:px-6 lg:px-8 bg-sygo-yellow-light/30 dark:bg-slate-950 transition-colors duration-500">
+    <section id="causes" className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-50/50 dark:bg-slate-950 transition-colors duration-500">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <motion.div

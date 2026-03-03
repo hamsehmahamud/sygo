@@ -14,7 +14,7 @@ const Sponsors: React.FC = () => {
   const scrollPartners = [...partners, ...partners, ...partners];
 
   return (
-    <section id="sponsors" className="py-24 bg-sygo-yellow-light/10 dark:bg-slate-950 transition-colors duration-500 relative overflow-hidden">
+    <section id="sponsors" className="py-24 bg-slate-50 dark:bg-slate-950 transition-colors duration-500 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="flex flex-col lg:flex-row items-center justify-between mb-20 gap-12">
@@ -52,7 +52,7 @@ const Sponsors: React.FC = () => {
         </div>
 
         {/* Horizontal Scrolling Marquee */}
-        <div className="relative w-full overflow-hidden py-10 before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-20 before:bg-gradient-to-r before:from-sygo-yellow-light/10 before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-20 after:bg-gradient-to-l after:from-sygo-yellow-light/10 after:to-transparent">
+        <div className="relative w-full overflow-hidden py-10 before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-20 before:bg-gradient-to-r before:from-slate-50 before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-20 after:bg-gradient-to-l after:from-slate-50 after:to-transparent">
           <motion.div
             className="flex gap-8 items-center"
             animate={{

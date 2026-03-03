@@ -18,7 +18,7 @@ const VisionMission: React.FC = () => {
   ];
 
   return (
-    <section id="vision" className="py-16 sm:py-24 bg-sygo-yellow-light dark:bg-slate-950 transition-colors duration-500 overflow-hidden">
+    <section id="vision" className="py-16 sm:py-24 bg-white dark:bg-slate-950 transition-colors duration-500 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Modern Header */}

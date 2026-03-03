@@ -37,7 +37,7 @@ const categories = [
 
 const Categories: React.FC = () => {
   return (
-    <section className="py-24 bg-sygo-yellow-light dark:bg-slate-800 transition-colors duration-300">
+    <section className="py-24 bg-slate-50 dark:bg-slate-800 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-sygo-red-dark dark:text-white mb-4 tracking-tight">Our Categories</h2>
