@@ -126,27 +126,17 @@ const Header: React.FC = () => {
 
             {/* Action Buttons */}
             <div className="flex items-center gap-4">
-              {/* Theme Toggle */}
-              <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-white/30 dark:bg-slate-800/50 backdrop-blur-md border border-white/20 dark:border-white/5">
-                <button
-                  onClick={() => changeTheme('light')}
-                  className={`p-2 rounded-xl transition-all ${theme === 'light'
-                    ? 'bg-white shadow-lg text-sygo-red scale-100'
-                    : 'text-sygo-red-dark/40 dark:text-slate-500 hover:text-sygo-red scale-90 opacity-60'}`}
-                  title="Light Mode"
-                >
-                  <span className="material-symbols-outlined text-[20px] block">light_mode</span>
-                </button>
-                <button
-                  onClick={() => changeTheme('dark')}
-                  className={`p-2 rounded-xl transition-all ${theme === 'dark'
-                    ? 'bg-slate-700 shadow-lg text-sygo-yellow scale-100'
-                    : 'text-sygo-red-dark/40 dark:text-slate-500 hover:text-sygo-yellow scale-90 opacity-60'}`}
-                  title="Dark Mode"
-                >
-                  <span className="material-symbols-outlined text-[20px] block">dark_mode</span>
-                </button>
-              </div>
+              {/* Theme Toggle - Single Button */}
+              <button
+                onClick={() => changeTheme(theme === 'dark' ? 'light' : 'dark')}
+                className="relative p-2.5 rounded-2xl bg-white/30 dark:bg-slate-800/50 backdrop-blur-md border border-white/20 dark:border-white/10 text-sygo-red-dark dark:text-sygo-yellow hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm"
+                title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+                aria-label="Toggle dark mode"
+              >
+                <span className="material-symbols-outlined text-[22px] block leading-none">
+                  {theme === 'dark' ? 'light_mode' : 'dark_mode'}
+                </span>
+              </button>
 
               {/* Mobile Menu Toggle */}
               <button
@@ -171,7 +161,7 @@ const Header: React.FC = () => {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-40 bg-sygo-yellow-light lg:hidden"
+            className="fixed inset-0 z-40 bg-sygo-yellow-light dark:bg-slate-900 lg:hidden"
             style={{ top: '80px' }}
           >
             <div className="p-6 flex flex-col h-full">
@@ -184,15 +174,24 @@ const Header: React.FC = () => {
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: idx * 0.05 }}
-                    className="flex items-center justify-between p-4 rounded-2xl hover:bg-sygo-yellow/10 group transition-colors"
+                    className="flex items-center justify-between p-4 rounded-2xl hover:bg-sygo-yellow/10 dark:hover:bg-white/5 group transition-colors"
                   >
-                    <span className="text-xl font-black text-sygo-red-dark">{item.name}</span>
-                    <span className="material-symbols-outlined text-sygo-red/40 group-hover:text-sygo-yellow transition-colors">arrow_forward</span>
+                    <span className="text-xl font-black text-sygo-red-dark dark:text-white">{item.name}</span>
+                    <span className="material-symbols-outlined text-sygo-red/40 dark:text-slate-500 group-hover:text-sygo-yellow transition-colors">arrow_forward</span>
                   </motion.a>
                 ))}
               </nav>
 
               <div className="mt-auto pb-8">
+                <button
+                  onClick={() => changeTheme(theme === 'dark' ? 'light' : 'dark')}
+                  className="w-full flex items-center justify-center gap-3 p-4 rounded-2xl bg-sygo-red/10 dark:bg-slate-800 border border-sygo-red/10 dark:border-white/10 text-sygo-red-dark dark:text-sygo-yellow font-black text-lg transition-all active:scale-95"
+                >
+                  <span className="material-symbols-outlined text-[22px]">
+                    {theme === 'dark' ? 'light_mode' : 'dark_mode'}
+                  </span>
+                  {theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+                </button>
               </div>
             </div>
           </motion.div>
