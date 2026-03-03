@@ -3,9 +3,9 @@ import Logo from './Logo';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-sygo-red-dark text-sygo-yellow-light pt-24 pb-12">
+    <footer className="bg-sygo-red-dark text-sygo-yellow-light pt-16 sm:pt-24 pb-8 sm:pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-12 sm:mb-16">
           {/* Brand */}
           <div className="space-y-6">
             <a href="#home" className="flex items-center gap-3 group">
@@ -28,10 +28,10 @@ const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-          
+
           {/* Links */}
           <div>
-            <h3 className="text-lg font-black mb-6">About</h3>
+            <h3 className="text-lg font-black mb-4 sm:mb-6">About</h3>
             <ul className="space-y-4 text-sygo-yellow-light/60">
               <li><a href="#vision" className="hover:text-sygo-yellow transition-colors">Our Story</a></li>
               <li><a href="#causes" className="hover:text-sygo-yellow transition-colors">Causes</a></li>
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-black mb-6">Discover</h3>
+            <h3 className="text-lg font-black mb-4 sm:mb-6">Discover</h3>
             <ul className="space-y-4 text-sygo-yellow-light/60">
               <li><a href="#" className="hover:text-sygo-yellow transition-colors">Where We Are</a></li>
               <li><a href="#" className="hover:text-sygo-yellow transition-colors">History</a></li>
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-black mb-6">Support</h3>
+            <h3 className="text-lg font-black mb-4 sm:mb-6">Support</h3>
             <ul className="space-y-4 text-sygo-yellow-light/60">
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-sygo-yellow text-sm">phone</span>
@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-sygo-yellow-light/40">
           <p>© 2025 SYGO Organization. All rights reserved.</p>
-          <div className="flex gap-8">
+          <div className="flex gap-4 sm:gap-8 flex-wrap justify-center mt-4 md:mt-0">
             <a href="#" className="hover:text-sygo-yellow transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-sygo-yellow transition-colors">Terms of Service</a>
           </div>

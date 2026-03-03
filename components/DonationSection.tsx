@@ -32,24 +32,24 @@ const DonationSection: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-sygo-yellow-light relative overflow-hidden">
+    <section className="py-16 sm:py-24 bg-sygo-yellow-light relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sygo-red via-sygo-yellow to-sygo-red opacity-20"></div>
       <div className="absolute -bottom-24 -left-24 size-96 bg-sygo-yellow rounded-full blur-[100px] opacity-10"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="bg-white rounded-[4rem] shadow-2xl shadow-sygo-red/5 border border-sygo-red/5 overflow-hidden">
+        <div className="bg-white rounded-[2rem] sm:rounded-[3rem] lg:rounded-[4rem] shadow-2xl shadow-sygo-red/5 border border-sygo-red/5 overflow-hidden">
           <div className="flex flex-col lg:flex-row">
-            
+
             {/* Left Content */}
-            <div className="lg:w-1/2 p-12 lg:p-20 bg-sygo-red-dark text-white">
+            <div className="lg:w-1/2 p-8 sm:p-12 lg:p-20 bg-sygo-red-dark text-white">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
                 <span className="text-sygo-yellow font-black uppercase tracking-[0.3em] text-sm mb-6 block">Support Our Mission</span>
-                <h2 className="text-5xl lg:text-6xl font-black mb-8 tracking-tighter leading-none">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 sm:mb-8 tracking-tighter leading-none">
                   Make A <br /> <span className="text-sygo-yellow">Donation</span>
                 </h2>
                 <p className="text-xl text-white/70 font-medium leading-relaxed max-w-md mb-10">
@@ -65,7 +65,7 @@ const DonationSection: React.FC = () => {
             </div>
 
             {/* Right Form */}
-            <div className="lg:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
+            <div className="lg:w-1/2 p-8 sm:p-12 lg:p-20 flex flex-col justify-center">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -95,13 +95,13 @@ const DonationSection: React.FC = () => {
                       <input
                         type="number"
                         placeholder="0.00"
-                        className="w-full pl-12 pr-6 py-5 bg-sygo-yellow/5 border-2 border-sygo-red/5 rounded-2xl font-black text-xl text-sygo-red-dark focus:border-sygo-yellow focus:bg-white outline-none transition-all"
+                        className="w-full pl-10 sm:pl-12 pr-4 sm:pr-6 py-4 sm:py-5 bg-sygo-yellow/5 border-2 border-sygo-red/5 rounded-2xl font-black text-lg sm:text-xl text-sygo-red-dark focus:border-sygo-yellow focus:bg-white outline-none transition-all"
                       />
                     </div>
-                    <button 
+                    <button
                       onClick={connectWallet}
                       disabled={isConnecting}
-                      className="px-12 py-5 bg-sygo-yellow hover:bg-sygo-red text-white font-black rounded-2xl shadow-xl shadow-sygo-yellow/20 transition-all active:scale-95 flex items-center justify-center gap-3 disabled:opacity-50"
+                      className="px-8 sm:px-12 py-4 sm:py-5 bg-sygo-yellow hover:bg-sygo-red text-white font-black rounded-2xl shadow-xl shadow-sygo-yellow/20 transition-all active:scale-95 flex items-center justify-center gap-3 disabled:opacity-50 w-full sm:w-auto mt-4 sm:mt-0"
                     >
                       {isConnecting ? 'Connecting...' : account ? `Connected: ${account.substring(0, 6)}...` : 'Donate Now'}
                       <span className="material-symbols-outlined">arrow_forward</span>
