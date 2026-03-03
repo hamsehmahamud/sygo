@@ -10,7 +10,7 @@ const allProjects: ProjectCardProps[] = [
     target: 20000,
     reached: 10,
     backers: 15,
-    imageUrl: '/input_file_21.png',
+    imageUrl: '/images/sygo/project-3.jpg',
   },
   {
     category: 'Grants Application',
@@ -19,7 +19,7 @@ const allProjects: ProjectCardProps[] = [
     target: 40000,
     reached: 5,
     backers: 8,
-    imageUrl: '/input_file_22.png',
+    imageUrl: '/images/sygo/project-2.jpg',
   },
   {
     category: 'Humanitarian',
