@@ -54,15 +54,15 @@ const Sponsors: React.FC = () => {
         {/* Horizontal Scrolling Marquee */}
         <div className="relative w-full overflow-hidden py-10 before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-20 before:bg-gradient-to-r before:from-white before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-20 after:bg-gradient-to-l after:from-white after:to-transparent">
           <motion.div
-            className="flex gap-8 items-center"
+            className="flex gap-8 items-center py-8"
             animate={{
-              x: [0, -100 * partners.length], // Adjust based on item width + gap
+              x: [0, -250 * partners.length], // Adjusted for 250px width card
             }}
             transition={{
               x: {
                 repeat: Infinity,
                 repeatType: "loop",
-                duration: 30,
+                duration: 25, // Slightly faster modern movement
                 ease: "linear",
               },
             }}
@@ -71,14 +71,16 @@ const Sponsors: React.FC = () => {
             {scrollPartners.map((partner, index) => (
               <motion.div
                 key={index}
-                className="flex flex-col justify-center items-center p-8 glass-card bg-white dark:bg-[#0a0a0a] border-none transition-all duration-500 group w-[300px] shrink-0"
+                className="flex flex-col justify-center items-center p-8 glass-card bg-white dark:bg-[#0a0a0a] border border-sygo-red/5 dark:border-white/5 shadow-xl hover:shadow-2xl hover:shadow-sygo-yellow/10 transition-all duration-500 group w-[250px] sm:w-[300px] shrink-0 rounded-[3rem]"
               >
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="h-16 w-auto object-contain transition-all duration-700 mb-6 grayscale group-hover:grayscale-0 group-hover:scale-110"
-                />
-                <span className="text-[10px] font-black uppercase text-center tracking-widest text-sygo-red-dark/40 dark:text-slate-500 group-hover:text-sygo-accent transition-colors">
+                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-white dark:bg-slate-900 shadow-inner flex items-center justify-center p-4 mb-6 border-4 border-slate-50 dark:border-slate-800 transition-transform duration-500 group-hover:scale-110 group-hover:border-sygo-yellow/30 overflow-hidden">
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="w-full h-full object-contain transition-all duration-700"
+                  />
+                </div>
+                <span className="text-xs font-black uppercase text-center tracking-widest text-sygo-red-dark dark:text-white group-hover:text-sygo-accent transition-colors">
                   {partner.name}
                 </span>
               </motion.div>
@@ -97,7 +99,7 @@ const Sponsors: React.FC = () => {
           <div className="relative z-10 flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
             <div className="flex -space-x-4">
               {partners.slice(0, 3).map((p, i) => (
-                <div key={i} className="size-20 rounded-3xl bg-white p-4 shadow-2xl border-4 border-sygo-red-dark dark:border-slate-900 overflow-hidden">
+                <div key={i} className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white p-2 sm:p-3 shadow-2xl border-4 border-sygo-red-dark dark:border-slate-900 overflow-hidden flex items-center justify-center">
                   <img src={p.logo} alt={p.name} className="w-full h-full object-contain" />
                 </div>
               ))}
