@@ -21,7 +21,7 @@ const Impact: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8">
           {impactData.map((item, index) => (
             <motion.div
               key={index}
@@ -34,7 +34,7 @@ const Impact: React.FC = () => {
               <div className={`size-20 rounded-3xl ${item.color} flex items-center justify-center mb-8 shadow-xl group-hover:rotate-12 transition-transform duration-500`}>
                 <span className="material-symbols-outlined text-4xl text-white">{item.icon}</span>
               </div>
-              <p className="text-6xl font-black mb-3 tracking-tighter text-sygo-red-dark dark:text-white group-hover:text-sygo-red transition-colors">{item.value}</p>
+              <p className="text-4xl sm:text-5xl md:text-6xl font-black mb-3 tracking-tighter text-sygo-red-dark dark:text-white group-hover:text-sygo-red transition-colors">{item.value}</p>
               <p className="text-sm font-black text-sygo-red-dark/60 dark:text-slate-400 uppercase tracking-[0.2em] leading-tight max-w-[180px]">{item.label}</p>
             </motion.div>
           ))}

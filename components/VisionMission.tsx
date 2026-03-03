@@ -18,7 +18,7 @@ const VisionMission: React.FC = () => {
   ];
 
   return (
-    <section id="vision" className="py-24 bg-sygo-yellow-light dark:bg-slate-950 transition-colors duration-500 overflow-hidden">
+    <section id="vision" className="py-16 sm:py-24 bg-sygo-yellow-light dark:bg-slate-950 transition-colors duration-500 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Modern Header */}
@@ -40,7 +40,7 @@ const VisionMission: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="text-6xl md:text-8xl font-black text-sygo-red-dark dark:text-white tracking-tighter leading-[0.85]"
+              className="text-4xl sm:text-6xl md:text-8xl font-black text-sygo-red-dark dark:text-white tracking-tighter leading-[0.85]"
             >
               Vision, Mission <br />
               <span className="text-sygo-accent">& Core Values</span>
@@ -64,9 +64,9 @@ const VisionMission: React.FC = () => {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-12 glass-card bg-sygo-red-dark dark:bg-slate-900 border-none p-12 md:p-20 text-white relative flex flex-col md:flex-row gap-12 items-center"
+            className="lg:col-span-12 glass-card bg-sygo-red-dark dark:bg-slate-900 border-none p-8 sm:p-12 md:p-20 text-white relative flex flex-col gap-8 sm:gap-12 items-center"
           >
-            <div className="w-full md:w-1/2 relative h-[400px] rounded-[2.5rem] overflow-hidden group">
+            <div className="w-full relative h-[220px] sm:h-[300px] md:h-[400px] rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden group">
               <img
                 src="/images/sygo/vision.jpg"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -75,13 +75,13 @@ const VisionMission: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-sygo-red-dark/60 to-transparent"></div>
             </div>
 
-            <div className="w-full md:w-1/2 relative z-20 space-y-8">
+            <div className="w-full relative z-20 space-y-6 sm:space-y-8">
               <div className="inline-flex size-20 rounded-3xl bg-sygo-yellow/20 backdrop-blur-xl border border-sygo-yellow/20 items-center justify-center text-sygo-yellow shadow-2xl">
                 <span className="material-symbols-outlined text-4xl font-bold">visibility</span>
               </div>
               <div>
-                <h3 className="text-5xl md:text-6xl font-black tracking-tighter uppercase mb-6 leading-none">Our Vision</h3>
-                <p className="text-3xl md:text-4xl leading-tight font-bold tracking-tight text-white/95 italic">
+                <h3 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tighter uppercase mb-4 sm:mb-6 leading-none">Our Vision</h3>
+                <p className="text-xl sm:text-3xl md:text-4xl leading-tight font-bold tracking-tight text-white/95 italic">
                   "A society where empowered youth and women lead inclusive and sustainable development."
                 </p>
                 <p className="mt-8 text-xl text-white/50 font-medium leading-relaxed max-w-lg">
@@ -97,7 +97,7 @@ const VisionMission: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="lg:col-span-6 glass-card bg-sygo-yellow border-none p-12 md:p-16 text-sygo-red-dark relative overflow-hidden flex flex-col justify-between min-h-[500px]"
+            className="lg:col-span-6 glass-card bg-sygo-yellow border-none p-8 sm:p-12 md:p-16 text-sygo-red-dark relative overflow-hidden flex flex-col justify-between min-h-[320px] sm:min-h-[400px] lg:min-h-[500px]"
           >
             <div className="absolute -bottom-20 -right-20 opacity-5 group-hover:scale-110 transition-transform duration-1000">
               <span className="material-symbols-outlined text-[25rem]">target</span>
@@ -108,8 +108,8 @@ const VisionMission: React.FC = () => {
                 <span className="material-symbols-outlined text-4xl font-bold">track_changes</span>
               </div>
               <div>
-                <h3 className="text-4xl md:text-5xl font-black tracking-tighter uppercase mb-6">Our Mission</h3>
-                <p className="text-2xl md:text-3xl leading-tight font-black opacity-90">
+                <h3 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-tighter uppercase mb-4 sm:mb-6">Our Mission</h3>
+                <p className="text-lg sm:text-2xl md:text-3xl leading-tight font-black opacity-90">
                   To empower youth—especially young women—through skills development, leadership protection, and economic opportunities.
                 </p>
               </div>
@@ -127,7 +127,7 @@ const VisionMission: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="lg:col-span-6 glass-card bg-sygo-accent/10 dark:bg-sygo-accent/5 p-12 md:p-16 relative overflow-hidden"
+            className="lg:col-span-6 glass-card bg-sygo-accent/10 dark:bg-sygo-accent/5 p-8 sm:p-12 md:p-16 relative overflow-hidden"
           >
             <div className="relative z-10">
               <div className="flex items-center justify-between mb-12">

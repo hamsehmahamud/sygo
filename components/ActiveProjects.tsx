@@ -67,7 +67,7 @@ const ActiveProjects: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-6xl md:text-7xl font-black text-sygo-red-dark dark:text-white mb-6 tracking-tighter leading-none"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-sygo-red-dark dark:text-white mb-6 tracking-tighter leading-none"
           >
             Powering <span className="text-sygo-red">Real Change</span>
           </motion.h2>
@@ -82,7 +82,7 @@ const ActiveProjects: React.FC = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
           {allProjects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

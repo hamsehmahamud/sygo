@@ -44,7 +44,7 @@ const RecentNews: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-6xl md:text-8xl font-black text-sygo-red-dark dark:text-white tracking-tighter leading-[0.85]"
+              className="text-4xl sm:text-6xl md:text-8xl font-black text-sygo-red-dark dark:text-white tracking-tighter leading-[0.85]"
             >
               Impact <span className="text-sygo-yellow">Stories</span>
             </motion.h2>
@@ -60,7 +60,7 @@ const RecentNews: React.FC = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {newsItems.map((item, index) => (
             <motion.div
               key={index}

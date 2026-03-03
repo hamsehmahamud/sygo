@@ -32,7 +32,7 @@ const Sponsors: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-6xl md:text-7xl font-black text-sygo-red-dark dark:text-white tracking-tighter leading-none"
+              className="text-4xl sm:text-6xl md:text-7xl font-black text-sygo-red-dark dark:text-white tracking-tighter leading-none"
             >
               Our Strategic <span className="text-sygo-accent">Partners</span>
             </motion.h2>
@@ -90,7 +90,7 @@ const Sponsors: React.FC = () => {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-24 p-12 md:p-20 bg-sygo-red-dark dark:bg-slate-900 rounded-[4rem] text-white flex flex-col lg:flex-row items-center justify-between gap-12 shadow-3xl relative overflow-hidden border border-white/5"
+          className="mt-16 sm:mt-24 p-8 sm:p-12 md:p-20 bg-sygo-red-dark dark:bg-slate-900 rounded-[3rem] sm:rounded-[4rem] text-white flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-12 shadow-3xl relative overflow-hidden border border-white/5"
         >
           <div className="absolute top-0 right-0 w-1/2 h-full bg-sygo-accent/10 dark:bg-white/5 skew-x-12 translate-x-1/4"></div>
 
@@ -103,7 +103,7 @@ const Sponsors: React.FC = () => {
               ))}
             </div>
             <div>
-              <h3 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Become a Partner</h3>
+              <h3 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">Become a Partner</h3>
               <p className="text-white/50 font-medium text-xl max-w-md">Join our global network of organizations working for sustainable change.</p>
             </div>
           </div>
@@ -111,7 +111,7 @@ const Sponsors: React.FC = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="relative z-10 px-12 py-6 bg-sygo-accent hover:bg-white hover:text-sygo-accent text-white font-black rounded-3xl shadow-2xl shadow-sygo-accent/20 transition-all text-lg"
+            className="relative z-10 w-full sm:w-auto px-8 sm:px-12 py-4 sm:py-6 bg-sygo-accent hover:bg-white hover:text-sygo-accent text-white font-black rounded-3xl shadow-2xl shadow-sygo-accent/20 transition-all text-base sm:text-lg"
           >
             Partner With Us
           </motion.button>

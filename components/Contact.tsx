@@ -2,14 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const contactDetails = {
-    address: 'Jigjig City, 06 Kebele, Inside Jigjiga Youth Center (Located in front of Jigjiga Public Administration and Management College)',
-    phone: '+251 948677457, +251 915428533',
-    email: 'info@sygoet.org',
-    website: 'sygoet.org',
-    socialMedia: {
-        facebook: 'Somali Youth Growth Mind Orginization',
-        instagram: '@sygo'
-    }
+  address: 'Jigjig City, 06 Kebele, Inside Jigjiga Youth Center (Located in front of Jigjiga Public Administration and Management College)',
+  phone: '+251 948677457, +251 915428533',
+  email: 'info@sygoet.org',
+  website: 'sygoet.org',
+  socialMedia: {
+    facebook: 'Somali Youth Growth Mind Orginization',
+    instagram: '@sygo'
+  }
 };
 
 const Contact: React.FC = () => {
@@ -17,36 +17,36 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-24 bg-white dark:bg-slate-900 transition-colors duration-300 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <motion.span 
+          <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             className="text-sygo-red font-black uppercase tracking-[0.3em] text-sm mb-4 block"
           >
             Connect With Us
           </motion.span>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-black text-sygo-red-dark dark:text-white tracking-tighter"
+            className="text-3xl sm:text-5xl md:text-6xl font-black text-sygo-red-dark dark:text-white tracking-tighter"
           >
             Get in <span className="text-sygo-yellow">Touch</span>
           </motion.h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          
+
           {/* Office Info Card - Modernized version of the image */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-5 bg-sygo-yellow-light dark:bg-slate-800 p-10 md:p-14 rounded-[4rem] shadow-2xl border-2 border-sygo-red/5 dark:border-white/5 relative overflow-hidden group"
+            className="lg:col-span-5 bg-sygo-yellow-light dark:bg-slate-800 p-8 sm:p-10 md:p-14 rounded-[3rem] sm:rounded-[4rem] shadow-2xl border-2 border-sygo-red/5 dark:border-white/5 relative overflow-hidden group"
           >
             <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity duration-700">
               <img src="/input_file_2.png" className="w-full h-full object-cover" alt="Office Background" />
             </div>
             <div className="absolute -top-20 -left-20 size-64 bg-sygo-yellow rounded-full blur-3xl opacity-20 z-10"></div>
-            
+
             <div className="relative z-20 space-y-10">
               <div>
                 <h3 className="text-4xl font-black text-sygo-red dark:text-sygo-yellow tracking-tighter mb-8">Our Office</h3>
@@ -105,11 +105,11 @@ const Contact: React.FC = () => {
           {/* Map & Form Section */}
           <div className="lg:col-span-7 space-y-8">
             {/* Map */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="h-[350px] rounded-[3rem] overflow-hidden shadow-xl border-2 border-sygo-red/5 dark:border-white/5 relative group"
+              className="h-[220px] sm:h-[280px] md:h-[350px] rounded-[2rem] sm:rounded-[3rem] overflow-hidden shadow-xl border-2 border-sygo-red/5 dark:border-white/5 relative group"
             >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15764.341144509364!2d42.77!3d9.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1634590000000000%3A0x0!2zOcKwMjEnMDAuMCJOIDQywrA0NicwMC4wIkU!5e0!3m2!1sen!2set!4v1700000000000!5m2!1sen!2set"
@@ -126,11 +126,11 @@ const Contact: React.FC = () => {
             </motion.div>
 
             {/* Simple Contact Form */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-sygo-red-dark dark:bg-slate-800 p-10 rounded-[3rem] text-white shadow-2xl"
+              className="bg-sygo-red-dark dark:bg-slate-800 p-8 sm:p-10 rounded-[2.5rem] sm:rounded-[3rem] text-white shadow-2xl"
             >
               <h3 className="text-2xl font-black mb-6 tracking-tight">Send us a Message</h3>
               <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
