@@ -4,11 +4,7 @@ Donats
 Projects
 
 
-# Run and deploy 
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/3af83bd9-c812-4c2d-869b-77385e16b239
 
 ## Run Locally
 
