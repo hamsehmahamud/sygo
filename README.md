@@ -13,13 +13,7 @@ A simple Node.js project. This README provides an overview, setup instructions, 
 - npm (bundled with Node.js)
 
 ## Environment
-Create a file named `.env.local` in the project root and add any necessary environment variables. At minimum this project expects:
-
-```
-GEMINI_API_KEY=your_gemini_api_key_here
-```
-
-Replace `your_gemini_api_key_here` with your actual Gemini API key if the project integrates with Gemini.
+Create a file named `.env.local` in the project root and add any necessary environment variables required for your setup.
 
 ## Install
 Install dependencies:
