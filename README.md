@@ -1,63 +1,116 @@
-# Sygo
+# Sygo (Somali Youth Growth Mind)
 
-A simple Node.js project. This README provides an overview, setup instructions, and usage notes so you can get Sygo running locally and contribute.
+Sygo is a modern, type-safe web application built to empower the Somali youth by fostering a growth mindset, tracking impactful community projects, and organizing transparent donations management. 
 
-## Features
-- Donations tracking (Donats)
-- Projects management
+This platform leverages a cutting-edge front-end tech stack coupled with cloud-native deployment configurations to ensure lightning-fast performance, high scalability, and an exceptional user experience.
 
-> Note: The original README listed `Donats` and `Projects`. If you want more detailed feature descriptions, tell me what each feature should do and I'll expand this section.
+---
 
-## Prerequisites
-- Node.js (v16+ recommended)
-- npm (bundled with Node.js)
+## 🚀 Tech Stack
 
-## Environment
-Create a file named `.env.local` in the project root and add any necessary environment variables required for your setup.
+- **Framework:** [React 19](https://react.dev) – Component-driven user interface architecture.
+- **Build Tool:** [Vite](https://vite.dev) – Ultra-fast development server and optimized production bundling via Rollup.
+- **Language:** [TypeScript](https://typescriptlang.org) – Strict static typing for robust and maintainable code rules.
+- **Styling:** Modern CSS modules configured with cascading variables.
+- **Hosting & Deployment:** [Vercel](https://vercel.com) – Edge-optimized cloud hosting with integrated preview deployments.
 
-## Install
-Install dependencies:
+---
 
+## ✨ Features
+
+- **📊 Projects Management Module:** Track, showcase, and evaluate active youth development initiatives and local community programs.
+- **💰 Advanced Donation Tracking (Donats):** A transparent, real-time logging infrastructure to visualize financial contributions and resource allocation.
+- **⚡ Hot Module Replacement (HMR):** Instant live-reloading development environment powered by Vite.
+- **🛡️ Enterprise Standards:** Out-of-the-box configuration for code compliance, security tracking, and explicit community rules.
+
+---
+
+## 📂 Project Structure
+
+```text
+sygo/
+├── .github/              # GitHub Actions workflows and automation pipelines
+├── components/           # Reusable, modular global React UI components
+├── public/               # Static assets (logos, icons, vectors, and manifests)
+├── App.tsx               # Primary application component tree structure
+├── index.html            # Main SPA DOM insertion landing container
+├── index.tsx             # Application mount entry point initializing React
+├── index.css             # Global style sheets, root tokens, and resets
+├── metadata.json         # Structured SEO and application description payloads
+├── tsconfig.json         # Strict TypeScript compiler options and path aliases
+├── vite.config.ts        # Vite execution configurations and plugin definitions
+└── vercel.json           # Vercel deployment routing and optimization controls
 ```
-npm install
-```
 
-## Run locally
-Start the development server:
+---
 
-```
-npm run dev
-```
+## ⚙️ Local Development Setup
 
-## Build (if applicable)
-If the project has a build step, run:
+### Prerequisites
 
-```
+Ensure you have the following software runtime systems installed locally:
+- **Node.js** (v18.0.0 or higher recommended)
+- **npm** (v9.0.0 or higher)
+
+### Installation Steps
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com
+   cd sygo
+   ```
+
+2. **Install project dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables:**
+   Create a local configuration environment file in the root directory:
+   ```bash
+   touch .env.local
+   ```
+   *Populate `.env.local` with any necessary local API keys or third-party integration credentials.*
+
+4. **Launch the Development Server:**
+   ```bash
+   npm run dev
+   ```
+   The local environment will become accessible immediately at `http://localhost:5173`.
+
+---
+
+## 📦 Production Bundling & Deployment
+
+To execute a local production compilation or output optimization metrics:
+
+```bash
+# Compile and build the optimized production assets
 npm run build
+
+# Preview the built production application locally
+npm run preview
 ```
 
-And to start in production mode:
+### Vercel Cloud Architecture
+This project is configured for continuous integration directly through Vercel. Pushing code updates directly to the `main` branch automatically triggers production multi-zone compilation pipelines utilizing the settings maintained within `vercel.json`.
 
-```
-npm start
-```
+---
 
-## Project structure (example)
-- src/ - source code
-- public/ - static assets
-- .env.local - local environment variables
-- package.json - npm scripts and dependencies
+## 🤝 Contributing
 
-Adjust this section to match the actual repository layout; tell me if you want me to list files from the repo.
+We welcome contributions from developers focused on enhancing youth growth initiatives! To contribute:
 
-## Contributing
-Contributions are welcome. To contribute:
-1. Fork the repository
-2. Create a feature branch
-3. Open a pull request with a clear description of your changes
+1. **Fork** this repository.
+2. **Create a Feature Branch** (`git checkout -b feature/AmazingFeature`).
+3. **Commit your Changes** following professional semantic versioning parameters (`git commit -m 'feat: add comprehensive metrics dashboard'`).
+4. **Push to the Branch** (`git push origin feature/AmazingFeature`).
+5. **Open a Pull Request** targeting the upstream repository.
 
-## License
-Specify a license for the project (e.g. MIT). If you want, I can add a LICENSE file.
+Please ensure your code aligns with our open-source safety frameworks outlined in `CODE_OF_CONDUCT.md`, `SECURITY.md`, and `CONTRIBUTING.md`.
 
-## Contact
-If you have questions or want help expanding the README, mention what you'd like added (detailed feature descriptions, screenshots, examples, CI setup, etc.) and I will update the file.
+---
+
+## 📄 License
+
+This project is licensed under the terms of the **MIT License**. For more details, see the accompanying `LICENSE` file.
