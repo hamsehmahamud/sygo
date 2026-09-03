@@ -1,45 +1,46 @@
-Thank you for your interest in contributing to sygo — Somali Youth Growth Mind.
+# Contributing to Sygo
 
-How to contribute
-1. Report issues
-   - Search existing issues before opening a new one.
-   - For bugs: include steps to reproduce, expected vs actual behavior, and environment.
-   - For feature requests: explain the use-case and possible design/UX.
+Thank you for your interest in contributing to the Sygo platform! We welcome community contributions, bug fixes, and feature enhancements that help empower Somali youth growth initiatives.
 
-2. Fork & clone
-   - Fork the repo on GitHub.
-   - Clone your fork: git clone https://github.com/<your-username>/sygo.git
-   - Create a branch for your change: git checkout -b feat/short-description
+Please take a moment to review this document before submitting your work to ensure a smooth integration process.
 
-3. Work & commit
-   - Follow the project’s code style (TypeScript, formatting, linting).
-   - Keep commits small and focused. Use clear commit messages like:
-     feat(auth): add session support
-     fix(ui): correct alignment on mobile
-   - Run tests and linters before pushing:
-     - npm install
-     - npm run build
-     - npm run lint
-     - npm test
+## How to Contribute
 
-4. Push & open a PR
-   - Push your branch to your fork: git push origin feat/short-description
-   - Open a Pull Request against the main repository’s main branch.
-   - In the PR description, explain what you changed and why, and link related issues.
+### 1. Report Bugs or Request Features
+If you find a bug or have an idea for an enhancement, please open an Issue in the GitHub repository. Provide as much context as possible, including:
+* A clear description of the issue or feature request.
+* Steps to reproduce the bug (if applicable).
+* Details about your local development environment (Node version, OS, browser).
 
-5. Review process
-   - Maintainers will review PRs, ask for changes if needed, and approve or request additional work.
-   - Respond to review feedback and update your branch; the PR will update automatically.
+### 2. Working on Code Changes
+To contribute code to the repository, please follow these sequential steps:
+1. **Fork the Repository:** Create your own fork of the `hamsehmahamud/sygo` repository.
+2. **Clone Locally:** Clone your fork to your local machine and navigate into the folder:
+   ```bash
+   git clone https://github.com
+   cd sygo
+   ```
+3. **Create a Feature Branch:** Branch off from the `main` branch. Use a punchy, descriptive name:
+   ```bash
+   git checkout -b feature/your-feature-name
+   # OR
+   git checkout -b fix/bug-description
+   ```
+4. **Implement and Test:** Make your modifications. Ensure the TypeScript compiler passes cleanly:
+   ```bash
+   npm run build
+   ```
+5. **Commit Your Code:** Write clear, concise commit messages following semantic guidelines:
+   ```bash
+   git commit -m "feat: implement real-time metric tracking for donations"
+   ```
+6. **Push Changes:** Push your newly created branch up to your forked repository:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+7. **Open a Pull Request:** Navigate to the original upstream repository and open a Pull Request (PR). Clearly describe your changes, references to any linked issues, and why the changes are necessary.
 
-Guidelines & expectations
-- Be respectful and collaborative.
-- Add tests for bug fixes or new features where practical.
-- Keep API changes documented and backwards-compatible when possible.
-- If your change is large, open an issue first to discuss the approach.
-
-Maintainers
-- Project maintainers may make minor editorial changes (formatting, docs).
-- Major decisions should involve prior discussion on an issue or PR.
-
-License
-By contributing, you agree that your contributions will be licensed under the project’s MIT Licenses.
+## Development Coding Standards
+* **TypeScript Precision:** Avoid using `any` types. Enforce strict static typing across your component state, layout interfaces, and functions.
+* **Component Architecture:** Maintain UI modules neatly organized within the `components/` directory. Keep components modular, isolated, and highly reusable.
+* **Clean Code:** Write semantic elements and clear variable definitions. Clean up any terminal logs or testing artifacts (`test_root.txt` etc.) before committing.
