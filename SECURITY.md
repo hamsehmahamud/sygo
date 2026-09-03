@@ -1,14 +1,22 @@
-Security Policy
+# Security Policy
 
-If you discover a security vulnerability, please contact the maintainers privately:
+## Supported Versions
+Only the latest active production deployments running on our core cloud ecosystem are currently supported with security updates.
 
-- Preferred: security@yourdomain.example (replace with a real contact)
-- Alternative: Create a private GitHub security report to the repository.
+| Version | Supported          |
+| ------- | ------------------ |
+| Latest (main branch) | :white_check_mark: |
+| < Latest | :x:                |
 
-Please include:
-- A clear description of the vulnerability
-- Steps required to reproduce the issue
-- Any suggested fixes or mitigations
-- Your contact information (so maintainers can follow up)
+## Reporting a Vulnerability
+We take the security and privacy of the Sygo project very seriously. If you discover a potential security vulnerability within this codebase or our cloud hosting environment, please do not open a public GitHub issue. Instead, report it privately to the maintainer.
 
-We will respond as soon as possible and keep you updated until the issue is resolved.
+Please email security reports directly to:
+**hamsehmahamud@gmail.com**
+
+In your report, please include:
+1. A detailed description of the vulnerability and the potential threat level.
+2. Step-by-step instructions or a proof-of-concept script to reproduce the security exploit.
+3. Any potential mitigations or security adjustments you recommend.
+
+We will review your submission promptly and work to address confirmed vulnerabilities in a swift manner before public disclosure.
